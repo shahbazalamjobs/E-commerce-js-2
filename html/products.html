@@ -1,0 +1,43 @@
+<!-- products.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart <i class="fas fa-shopping-cart"></i> </a></li>
+                <li><a id="clear-cart" href="#">Clear Cart</a></li>        
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Our Products</h1>
+        <div class="filter-container">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <!-- Add options dynamically using JavaScript -->
+            </select>
+        </div>
+        <div class="products-container"></div>
+        <div class="pagination-container"></div>
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 My Store. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/js/products.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <!-- ------------ navbar ---------- -->
+        <nav>
+            <div class="logo">
+                <h1>My Store</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart <i class="fas fa-shopping-cart"></i> </a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ------------- cta section ---------- -->
+    <section class="cta">
+        <h2>Welcome to My Store!</h2>
+        <p>Discover amazing deals on your favorite products.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <!-- ----------- categories card ---------- -->
+    <section class="product-categories">
+        <h2> Categories </h2>
+        <div id="category-container"></div>
+        
+    </section>
+
+    <!-- ----------- faq accordion ---------- -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion"> </div>
+        
+    </section>
+
+
+    <!-- ------------- footer --------------- -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <h1>My Store</h1>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 My Store. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/js/script.js"></script>
+</body>
+</html>

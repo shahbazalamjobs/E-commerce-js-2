@@ -1,0 +1,290 @@
+/* product-detail.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Reset */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Fonts */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+ul li:nth-child(3) a {
+    background-color: #dc3545;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    background-color: #555;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    min-height: 82vh;
+}
+
+.product-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-detail-main {
+    display: flex;
+    align-items: center;
+}
+
+.product-detail-main img {
+    margin-right: 25px;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 100px;    
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+}
+
+.product-detail-main h1 {
+    margin-bottom: 20px;
+}
+
+.product-detail-main p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling for Product Detail */
+.product-detail-main {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.content p {
+    color: #555;
+}
+
+.content .price {
+    color: #333;
+    font-size: 40px;
+}
+
+.product-detail h2 {
+    color: #6e6969;
+}
+
+.product-detail-main img {
+    border: 1px solid #ddd;
+}
+
+.product-detail-main .content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.product-detail-main .content button:first-of-type {
+    background-color: #007bff;
+}
+
+.product-detail-main .content button:nth-of-type(2) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.product-detail-main .content .cart-total {
+    border: solid 2px #bcb6b6;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 2px 8px;
+    position: relative;
+    top: 2px;
+}
+
+/* Style for the wrapper div containing the star rating */
+.star-rating {
+    display: inline-block;
+    font-size: 20px; /* Adjust as needed */
+}
+
+/* Style for the inner div holding the stars */
+.stars-inner {
+    position: relative; /* Position relative for absolute positioning of the partially filled star */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Style for individual star icons */
+.fas.fa-star {
+    color: gold; /* Color for filled stars */
+    margin-right: 2px; /* Adjust spacing between stars */
+}
+
+/* Style for the container of empty stars */
+.fas.fa-star:last-child {
+    color: grey; /* Color for empty stars */
+}
+
+/* Style for the partially filled star */
+.partial-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: gold; /* Color for partially filled star */
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .product-detail-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-detail-main img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

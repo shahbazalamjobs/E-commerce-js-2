@@ -1,0 +1,272 @@
+/* product-detail.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Reset */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Fonts */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+ul li:nth-child(3) a {
+    background-color: #dc3545;
+}
+
+nav ul li a i {
+    margin-left: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    background-color: #555;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    min-height: 82vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 80px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.product-info h2 {
+    margin: 0;
+    color: rgb(72, 71, 71);
+}
+
+.quantity {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.button-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.button-container button {
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #0395b6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #026e86;
+}
+
+/* Subtotal and Total */
+#subtotal-row,
+#total-items,
+#total-cost {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subtotal-row p,
+#total-items p,
+#total-cost p {
+    margin: 0;
+}
+
+#subtotal-cost,
+#total-items,
+#total-cost {
+    font-weight: bold;
+}
+
+#subtotal-row {
+    padding: 8px;
+    background-color: rgb(232, 228, 228);
+    border-radius: 4px;
+}
+
+
+.total-price {
+    margin-left: 20px;
+}
+
+main a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color */
+}
+
+/* Styling for "Proceed to Buy" link */
+#proceed-buy {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#proceed-buy:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+    .product-info img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .button-container button {
+        padding: 6px 10px;
+    }
+
+    #subtotal-row,
+    #total-items,
+    #total-cost {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #subtotal-row,
+    #total-items,
+    #total-cost p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .product-info img {
+        margin-right: 15px;
+    }
+
+    .button-container button {
+        padding: 7px 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-info img {
+        margin-right: 25px;
+    }
+
+    .button-container button {
+        padding: 8px 15px;
+    }
+}

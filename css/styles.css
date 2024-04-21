@@ -1,0 +1,210 @@
+/* CSS styles for the entire website */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+ul li:nth-child(3) a {
+    background-color: #dc3545;
+}
+
+nav ul li a i {
+    margin-left: 4px;
+}
+
+section {
+    padding: 20px;
+}
+
+/* CTA section */
+.cta {
+    background-color: #f4f4f4;
+    height: 80vh;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.cta .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #555;
+}
+
+/* FAQ section */
+.faq {
+    background-color: #f9f9f9;
+    padding: 28vh 5vw;
+}
+
+.toggle-icon {
+    float: right;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-title.open {
+    background-color: #ccc;    
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.accordion-title.active .toggle-icon {
+    content: "-";
+}
+
+
+/* ------------ categories card --------- */
+
+.category-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    border: 1px solid #249dfa;
+}
+
+.product-categories {
+    padding: 100px 20px 180px;
+}
+
+.product-categories h2 {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    background-color: #555;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Details</title>
+    <link rel="stylesheet" href="/css/delivery.css">
+</head>
+<body>
+    <header>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart <i class="fas fa-shopping-cart"></i> </a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <form id="delivery-form" action="checkout.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="contact">Phone:</label>
+            <input type="text" id="contact" name="contact" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+            <input type="submit" value="Proceed to Checkout">
+        
+        </form>
+
+        <div id="delivery-status" style="display: none;">
+            <p> Submission confirmed. Your order is scheduled for delivery within 7 days. </p>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 My Store. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/delivery.js"></script>
+</body>
+</html>

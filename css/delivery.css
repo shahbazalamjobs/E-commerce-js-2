@@ -1,0 +1,177 @@
+/* product-detail.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* delivery.css */
+
+ul {
+    list-style: none;
+}
+
+/* Fonts */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+ul li:nth-child(3) a {
+    background-color: #dc3545;
+}
+
+nav ul li a i {
+    margin-left: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    background-color: #555;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    min-height: 82vh;
+}
+
+/* Delivery Form */
+#delivery-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#delivery-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#delivery-form input[type="text"],
+#delivery-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#delivery-form textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+#delivery-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#delivery-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Delivery Status */
+#delivery-status {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#delivery-status p {
+    margin: 0;
+    font-weight: bold;
+}
