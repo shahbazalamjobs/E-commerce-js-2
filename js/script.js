@@ -1,4 +1,4 @@
-import accordionData from '/js/data.js';
+import accordionData from './js/data.js'; 
 
 document.addEventListener('DOMContentLoaded', async function () {
     const accordion = document.querySelector('.accordion');
